@@ -1,0 +1,60 @@
+{
+  "dados_pessoais": {
+    "nome": "Thales Natan de Oliveira Nascimento",
+    "localizacao": "Campo Mourão, PR",
+    "email": "thalesnascimento@alunos.utfpr.edu.br",
+    "linkedin": "https://linkedin.com/in/thales-natan-6b44222b1",
+    "github": "https://github.com/ThalesNatan14"
+  },
+  "resumo_profissional": "Estudante de Ciência da Computação na UTFPR (5º período) em busca de estágio nas áreas de dados, front-end ou desenvolvimento de software. Possuo facilidade com banco de dados e desenvolvimento de sistemas, com experiência acadêmica em Java, Python, C, C++ e SQL e prática em front-end com TypeScript (TSX) em projetos em equipe.",
+  "formacao": [
+    {
+      "instituicao": "Universidade Tecnológica Federal do Paraná (UTFPR)",
+      "curso": "Bacharelado em Ciência da Computação",
+      "status": "Cursando o 5º período",
+      "previsao_formatura": "07/2028"
+    }
+  ],
+  "habilidades": {
+    "linguagens": ["Java", "Python", "C", "C++", "TypeScript", "SQL"],
+    "banco_de_dados": ["SQL (MySQL)", "Modelagem relacional"],
+    "frameworks_e_libs": ["TSX", "NestJS", "Recharts"],
+    "ferramentas": ["Docker", "Git", "GitHub"],
+    "idiomas": [
+      {
+        "idioma": "Português",
+        "nivel": "Nativo"
+      },
+      {
+        "idioma": "Inglês",
+        "nivel": "Básico"
+      },
+
+      {
+        "idioma": "Espanhol",
+        "nivel": "Básico"
+      }
+    ]
+  },
+  "projetos": [
+    {
+      "nome": "Projeto Integrador: Sistema de gerenciamento de repositórios do GitHub",
+      "tecnologias": ["TypeScript (TSX)", "Recharts", "NestJS", "Docker", "Git"],
+      "descricao_pontos": [
+        "Desenvolvimento em equipe de sistema web para gerenciar repositórios do GitHub, com API em NestJS, ambiente containerizado com Docker e versionamento via Git.",
+        "Atuação como responsável principal pelo desenvolvimento front-end em TSX.",
+        "Implementação de tela de evolução de produtividade com gráficos em Recharts, exibindo métricas de Pull Requests e Issues agrupadas por repositório ao longo do tempo."
+      ]
+    },
+    {
+      "nome": "Servidor de requisições em C++: aplicação cliente",
+      "tecnologias": ["C++", "Sockets TCP", "Multithreading", "std::mutex", "std::chrono"],
+      "descricao_pontos": [
+        "Desenvolvimento da aplicação cliente para servidor de requisições utilizando sockets TCP com suporte a modo interativo e benchmark.",
+        "Implementação de benchmark disparando múltiplas threads simultâneas para medição de latência e vazão (throughput).",
+        "Garantia de robustez e tratamento de erros via timeout de recebimento, controle do fluxo de bytes TCP e proteção contra SIGPIPE.",
+        "Sincronização de estatísticas entre threads com std::mutex e std::lock_guard, além de medição de latência com std::chrono."
+      ]
+    }
+  ]
+}
