@@ -2,7 +2,7 @@ import os
 import json
 from google import genai
 from google.genai import types
-from google.genai.errors import ServerError
+from google.genai.errors import ServerError, APIError
 from tenacity import retry, stop_after_attempt, wait_exponential, retry_if_exception_type
 from dotenv import load_dotenv
 
@@ -16,9 +16,10 @@ def carregar_cv_base(caminho_ficheiro: str = "cv_base.json") -> dict:
         return json.load(f)
 
 @retry(
-        stop=stop_after_attempt(3),
-        wait=wait_exponential(multiplier=1, min=2, max=10),
-        retry=retry_if_exception_type(ServerError)
+        stop=stop_after_attempt(5),
+        wait=wait_exponential(multiplier=2, min=4, max=30),
+        retry=retry_if_exception_type((ServerError, APIError)),
+        reraise=True
 )
 
 def otimizar_curriculo(desc_vaga: str, cv_base: dict) -> str:
